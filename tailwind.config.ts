@@ -1,16 +1,19 @@
 import type { Config } from "tailwindcss";
-
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  ],import Image from "next/image";
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#072631",
+        buttonbg:"#1879BE",
+      },
+      fontFamily: {
+        jua: ["var(--font-jua)", "sans-serif"],
+        mako: ["var(--font-mako)", "serif"],
       },
     },
   },
