@@ -31,12 +31,12 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        working-directory: ./info_web
+        working-directory: ./
         run: npm install
 
       # Build the project
       - name: Build Next.js project
-        working-directory: ./info_web
+        working-directory: ./
         run: npm run build
 
   deploy:
@@ -49,16 +49,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2  
       - name: Install Vercel CLI
-        working-directory: ./info_web 
+        working-directory: ./ 
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
-        working-directory: ./info_web 
+        working-directory: ./ 
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
-        working-directory: ./info_web 
+        working-directory: ./ 
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        working-directory: ./info_web 
+        working-directory: ./ 
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Notify Deployment Success
