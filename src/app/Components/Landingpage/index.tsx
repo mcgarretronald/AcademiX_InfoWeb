@@ -20,12 +20,12 @@ export default function Landingpage() {
 
     return (
         <div
-            className="bg-no-repeat bg-center h-screen bg-cover relative px-8"
+            className="bg-no-repeat bg-center h-screen bg-cover relative md:px-8 px-1"
             style={{ backgroundImage: "url('/landingpage.png')" }}
         >
             {/* Card Section with animation applied */}
             <animated.div
-                className="w-[650px] absolute top-[25%] bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-3xl leading-tight"
+                className="md:w-[650px] w-[350px] absolute top-[25%] bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-3xl leading-tight"
                 style={fadeInLeft}  // Apply spring animation to the style
             >
                 <section className="mb-4">
@@ -36,10 +36,10 @@ export default function Landingpage() {
                         alt="colorblock"
                     />
                 </section>
-                <h1 className="font-mako text-white text-[40px] mb-4">
+                <h1 className="font-mako text-white md:text-[40px] text-[25px] mb-4">
                     AcademiX Revolutionizing School Management for Educators Everywhere.
                 </h1>
-                <h2 className="font-jua text-white text-[20px] mb-6 mt-10 ">
+                <h2 className="font-jua text-white md:text-[20px] text-[15px] mb-6 mt-10 ">
                     Effortlessly organize, track, and optimize your school&apos;s operations with a single platform.
                 </h2>
                 <button
