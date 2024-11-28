@@ -1,7 +1,7 @@
 import CustomSlider from "../Carousel"
 export default function Product() {
     return (
-        <div className="py-10">
+        <div className="py-10" id="services">
             <h1 className="text-center font-mako md:text-5xl  text-3xl p-5 mb-5">Your All-in-One School Management Solution.</h1>
             <div className="md:flex px-8">
             <div className="md:w-1/2 flex items-center ">

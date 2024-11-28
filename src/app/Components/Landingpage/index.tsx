@@ -3,6 +3,7 @@
 import { useSpring, animated } from '@react-spring/web';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Navbar from '../NavBar';
 
 export default function Landingpage() {
     // Create the animation for the card fade-in from the left
@@ -22,7 +23,9 @@ export default function Landingpage() {
         <div
             className="bg-no-repeat bg-center h-screen bg-cover relative md:px-8 px-1"
             style={{ backgroundImage: "url('/landingpage.png')" }}
+            id='home'
         >
+            <Navbar/>
             {/* Card Section with animation applied */}
             <animated.div
                 className="md:w-[650px] w-[350px] absolute top-[25%] bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-3xl leading-tight"
