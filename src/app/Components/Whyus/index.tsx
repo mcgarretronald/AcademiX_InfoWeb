@@ -3,9 +3,9 @@ import Image from "next/image"
 export default function Whyus() {
     return (
         <div className="py-14 text-white">
-            <h1 className="font-mako md:text-[40px] text-3xl text-center ">Why Choose AcademiX?</h1>
+            <h1 className="font-mako md:text-[40px] text-3xl text-center pb-4 ">Why Choose Academi X?</h1>
             <p className="font-jua md:text-[20px] text-sm text-center">Empowering schools with cutting-edge technology and personalized support.</p>
-            <div className="md:grid md:grid-cols-3 md:mx-10 mx-1  mt-12 items-center">
+            <div className="md:grid md:grid-cols-3 md:mx-10  mx-1  mt-12 items-center">
                 {/* Section 1 */}
                 <section className="mb-10">
                     {/* card one */}
